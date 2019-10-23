@@ -55,5 +55,8 @@ namespace Sodavandsautomat
         {
             pictureBox1.Image = null;
         }
+        
+
+
     }
 }
