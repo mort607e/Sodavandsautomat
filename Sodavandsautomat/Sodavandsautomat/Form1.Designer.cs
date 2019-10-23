@@ -35,91 +35,6 @@
             this.button_1kr = new System.Windows.Forms.Button();
             this.label_Beløb = new System.Windows.Forms.Label();
             this.textBox_beløb = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
-            // 
-            // button_20kr
-            // 
-            this.button_20kr.Location = new System.Drawing.Point(372, 135);
-            this.button_20kr.Name = "button_20kr";
-            this.button_20kr.Size = new System.Drawing.Size(75, 75);
-            this.button_20kr.TabIndex = 0;
-            this.button_20kr.Text = "20 kr.";
-            this.button_20kr.UseVisualStyleBackColor = true;
-            this.button_20kr.Click += new System.EventHandler(this.button_Click);
-            // 
-            // button_10kr
-            // 
-            this.button_10kr.Location = new System.Drawing.Point(453, 135);
-            this.button_10kr.Name = "button_10kr";
-            this.button_10kr.Size = new System.Drawing.Size(75, 75);
-            this.button_10kr.TabIndex = 1;
-            this.button_10kr.Text = "10 kr.";
-            this.button_10kr.UseVisualStyleBackColor = true;
-            this.button_10kr.Click += new System.EventHandler(this.button_Click);
-            // 
-            // button_5kr
-            // 
-            this.button_5kr.Location = new System.Drawing.Point(534, 135);
-            this.button_5kr.Name = "button_5kr";
-            this.button_5kr.Size = new System.Drawing.Size(75, 75);
-            this.button_5kr.TabIndex = 2;
-            this.button_5kr.Text = "5 kr.";
-            this.button_5kr.UseVisualStyleBackColor = true;
-            this.button_5kr.Click += new System.EventHandler(this.button_Click);
-            // 
-            // button_2kr
-            // 
-            this.button_2kr.Location = new System.Drawing.Point(372, 216);
-            this.button_2kr.Name = "button_2kr";
-            this.button_2kr.Size = new System.Drawing.Size(75, 75);
-            this.button_2kr.TabIndex = 3;
-            this.button_2kr.Text = "2 kr.";
-            this.button_2kr.UseVisualStyleBackColor = true;
-            this.button_2kr.Click += new System.EventHandler(this.button_Click);
-            // 
-            // button_1kr
-            // 
-            this.button_1kr.Location = new System.Drawing.Point(453, 216);
-            this.button_1kr.Name = "button_1kr";
-            this.button_1kr.Size = new System.Drawing.Size(75, 75);
-            this.button_1kr.TabIndex = 4;
-            this.button_1kr.Text = "1 kr.";
-            this.button_1kr.UseVisualStyleBackColor = true;
-            this.button_1kr.Click += new System.EventHandler(this.button_Click);
-            // 
-            // label_Beløb
-            // 
-            this.label_Beløb.AutoSize = true;
-            this.label_Beløb.Location = new System.Drawing.Point(372, 69);
-            this.label_Beløb.Name = "label_Beløb";
-            this.label_Beløb.Size = new System.Drawing.Size(48, 17);
-            this.label_Beløb.TabIndex = 6;
-            this.label_Beløb.Text = "Beløb:";
-            // 
-            // textBox_beløb
-            // 
-            this.textBox_beløb.Location = new System.Drawing.Point(453, 69);
-            this.textBox_beløb.Name = "textBox_beløb";
-            this.textBox_beløb.ReadOnly = true;
-            this.textBox_beløb.Size = new System.Drawing.Size(156, 22);
-            this.textBox_beløb.TabIndex = 7;
-            this.textBox_beløb.Text = "0";
-            this.textBox_beløb.TextChanged += new System.EventHandler(this.textBox_beløb_TextChanged);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox_beløb);
-            this.Controls.Add(this.label_Beløb);
-            this.Controls.Add(this.button_1kr);
-            this.Controls.Add(this.button_2kr);
-            this.Controls.Add(this.button_5kr);
-            this.Controls.Add(this.button_10kr);
-            this.Controls.Add(this.button_20kr);
-            this.Name = "Form1";
-            this.Text = "Form1";
             this.CocaCola = new System.Windows.Forms.Button();
             this.Sprite = new System.Windows.Forms.Button();
             this.FaxeKondi = new System.Windows.Forms.Button();
@@ -134,13 +49,84 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label_retur = new System.Windows.Forms.Label();
+            this.textBox_Retur = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button_20kr
+            // 
+            this.button_20kr.Location = new System.Drawing.Point(453, 135);
+            this.button_20kr.Name = "button_20kr";
+            this.button_20kr.Size = new System.Drawing.Size(75, 75);
+            this.button_20kr.TabIndex = 0;
+            this.button_20kr.Text = "20 kr.";
+            this.button_20kr.UseVisualStyleBackColor = true;
+            this.button_20kr.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button_10kr
+            // 
+            this.button_10kr.Location = new System.Drawing.Point(534, 135);
+            this.button_10kr.Name = "button_10kr";
+            this.button_10kr.Size = new System.Drawing.Size(75, 75);
+            this.button_10kr.TabIndex = 1;
+            this.button_10kr.Text = "10 kr.";
+            this.button_10kr.UseVisualStyleBackColor = true;
+            this.button_10kr.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button_5kr
+            // 
+            this.button_5kr.Location = new System.Drawing.Point(615, 135);
+            this.button_5kr.Name = "button_5kr";
+            this.button_5kr.Size = new System.Drawing.Size(75, 75);
+            this.button_5kr.TabIndex = 2;
+            this.button_5kr.Text = "5 kr.";
+            this.button_5kr.UseVisualStyleBackColor = true;
+            this.button_5kr.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button_2kr
+            // 
+            this.button_2kr.Location = new System.Drawing.Point(453, 216);
+            this.button_2kr.Name = "button_2kr";
+            this.button_2kr.Size = new System.Drawing.Size(75, 75);
+            this.button_2kr.TabIndex = 3;
+            this.button_2kr.Text = "2 kr.";
+            this.button_2kr.UseVisualStyleBackColor = true;
+            this.button_2kr.Click += new System.EventHandler(this.button_Click);
+            // 
+            // button_1kr
+            // 
+            this.button_1kr.Location = new System.Drawing.Point(534, 216);
+            this.button_1kr.Name = "button_1kr";
+            this.button_1kr.Size = new System.Drawing.Size(75, 75);
+            this.button_1kr.TabIndex = 4;
+            this.button_1kr.Text = "1 kr.";
+            this.button_1kr.UseVisualStyleBackColor = true;
+            this.button_1kr.Click += new System.EventHandler(this.button_Click);
+            // 
+            // label_Beløb
+            // 
+            this.label_Beløb.AutoSize = true;
+            this.label_Beløb.Location = new System.Drawing.Point(450, 79);
+            this.label_Beløb.Name = "label_Beløb";
+            this.label_Beløb.Size = new System.Drawing.Size(48, 17);
+            this.label_Beløb.TabIndex = 6;
+            this.label_Beløb.Text = "Beløb:";
+            // 
+            // textBox_beløb
+            // 
+            this.textBox_beløb.Location = new System.Drawing.Point(534, 76);
+            this.textBox_beløb.Name = "textBox_beløb";
+            this.textBox_beløb.ReadOnly = true;
+            this.textBox_beløb.Size = new System.Drawing.Size(156, 22);
+            this.textBox_beløb.TabIndex = 7;
+            this.textBox_beløb.Text = "0";
+            this.textBox_beløb.TextChanged += new System.EventHandler(this.textBox_beløb_TextChanged);
             // 
             // CocaCola
             // 
             this.CocaCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CocaCola.Location = new System.Drawing.Point(16, 53);
+            this.CocaCola.Location = new System.Drawing.Point(16, 55);
             this.CocaCola.Name = "CocaCola";
             this.CocaCola.Size = new System.Drawing.Size(284, 58);
             this.CocaCola.TabIndex = 0;
@@ -209,7 +195,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(306, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 24);
+            this.label1.Size = new System.Drawing.Size(63, 29);
             this.label1.TabIndex = 6;
             this.label1.Text = "20Kr";
             // 
@@ -219,7 +205,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(306, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 24);
+            this.label2.Size = new System.Drawing.Size(63, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "23Kr";
             // 
@@ -229,7 +215,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(306, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 24);
+            this.label3.Size = new System.Drawing.Size(63, 29);
             this.label3.TabIndex = 8;
             this.label3.Text = "25Kr";
             // 
@@ -239,7 +225,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(306, 249);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 24);
+            this.label4.Size = new System.Drawing.Size(63, 29);
             this.label4.TabIndex = 9;
             this.label4.Text = "22Kr";
             // 
@@ -249,7 +235,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(306, 304);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 24);
+            this.label5.Size = new System.Drawing.Size(63, 29);
             this.label5.TabIndex = 10;
             this.label5.Text = "22Kr";
             // 
@@ -259,16 +245,16 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(306, 364);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 24);
+            this.label6.Size = new System.Drawing.Size(63, 29);
             this.label6.TabIndex = 11;
             this.label6.Text = "23Kr";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(306, 12);
+            this.textBox2.Location = new System.Drawing.Point(264, 12);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(215, 35);
+            this.textBox2.Size = new System.Drawing.Size(264, 41);
             this.textBox2.TabIndex = 14;
             this.textBox2.Text = "Sodavandsautomat";
             // 
@@ -281,11 +267,36 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
+            // label_retur
+            // 
+            this.label_retur.AutoSize = true;
+            this.label_retur.Location = new System.Drawing.Point(453, 327);
+            this.label_retur.Name = "label_retur";
+            this.label_retur.Size = new System.Drawing.Size(43, 17);
+            this.label_retur.TabIndex = 16;
+            this.label_retur.Text = "Retur";
+            // 
+            // textBox_Retur
+            // 
+            this.textBox_Retur.Location = new System.Drawing.Point(534, 327);
+            this.textBox_Retur.Name = "textBox_Retur";
+            this.textBox_Retur.Size = new System.Drawing.Size(156, 22);
+            this.textBox_Retur.TabIndex = 17;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 654);
+            this.Controls.Add(this.textBox_Retur);
+            this.Controls.Add(this.label_retur);
+            this.Controls.Add(this.textBox_beløb);
+            this.Controls.Add(this.label_Beløb);
+            this.Controls.Add(this.button_1kr);
+            this.Controls.Add(this.button_2kr);
+            this.Controls.Add(this.button_5kr);
+            this.Controls.Add(this.button_10kr);
+            this.Controls.Add(this.button_20kr);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label6);
@@ -331,6 +342,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label_retur;
+        private System.Windows.Forms.TextBox textBox_Retur;
     }
 }
 

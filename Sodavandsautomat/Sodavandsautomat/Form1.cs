@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sodavandsautomat.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,57 +42,103 @@ namespace Sodavandsautomat
             return res;
         }
         private void button_Click(object sender, EventArgs e)
-        {
-            
+        {  
             Button b = (Button)sender;
             int result = int.Parse(textBox_beløb.Text) + GetNumberFromButton(b.Text);
             textBox_beløb.Text = result.ToString();
-            //number = GetNumberFromButton(b.Name);
-            //textBox_beløb.Text += number.ToString();
-
-            
         }
-     
+
 
         private void textBox_beløb_TextChanged(object sender, EventArgs e)
         {
-            
+        }
         private void CocaCola_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:/Users/mikke/OneDrive/Documents/GitHub/Sodavandsautomat/Billeder/CocaCola.jpg");
+            
+            int colapris = 20;
+
+            if (colapris<=int.Parse(textBox_beløb.Text))
+            {
+                pictureBox1.Image = (Image)Sodavandsautomat.Properties.Resources.CocaCola;
+               
+            }
+
+
+            if (pictureBox1.Image != null)
+            {
+                MessageBox.Show("Husk at tage din sodavand");
+            }
+            else
+            {
+                MessageBox.Show("Du har ikke nok penge");
+                pictureBox1.Image = null;
+            }
         }
 
         private void Sprite_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:/Users/mikke/OneDrive/Documents/GitHub/Sodavandsautomat/Billeder/Sprite.jpeg");
+            if (pictureBox1.Image != null)
+            {
+                MessageBox.Show("Du skal tage din sodavand inden du køber din næste.");
+            }
+            else
+            {
+                pictureBox1.Image = (Image)Sodavandsautomat.Properties.Resources.Sprite;
+            }
         }
 
         private void FaxeKondi_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:/Users/mikke/OneDrive/Documents/GitHub/Sodavandsautomat/Billeder/FaxeKondi.png");
+            if (pictureBox1.Image != null)
+            {
+                MessageBox.Show("Du skal tage din sodavand inden du køber din næste.");
+            }
+            else
+            {
+                pictureBox1.Image = (Image)Sodavandsautomat.Properties.Resources.FaxeKondi;
+            }
         }
 
         private void Pepsi_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:/Users/mikke/OneDrive/Documents/GitHub/Sodavandsautomat/Billeder/Pepsi1.jpg");
+            if (pictureBox1.Image != null)
+            {
+                MessageBox.Show("Du skal tage din sodavand inden du køber din næste.");
+            }
+            else
+            {
+                pictureBox1.Image = (Image)Sodavandsautomat.Properties.Resources.Pepsi1;
+            }
         }
 
         private void PepsiMax_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:/Users/mikke/OneDrive/Documents/GitHub/Sodavandsautomat/Billeder/PepsiMax.png");
+            if (pictureBox1.Image != null)
+            {
+                MessageBox.Show("Du skal tage din sodavand inden du køber din næste.");
+            }
+            else
+            {
+                pictureBox1.Image = (Image)Sodavandsautomat.Properties.Resources.PepsiMax;
+            }
         }
 
         private void SevenUp_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile("C:/Users/mikke/OneDrive/Documents/GitHub/Sodavandsautomat/Billeder/SevenUp.jpg");
+            if (pictureBox1.Image != null)
+            {
+                MessageBox.Show("Du skal tage din sodavand inden du køber din næste.");
+            }
+            else
+            {
+                pictureBox1.Image = (Image)Sodavandsautomat.Properties.Resources.SevenUp;
+            }
         }
-        private void buttondown(object sender, EventArgs e)
-        {
-
-        }
+       
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = null;
+                pictureBox1.Image = null;
+
         }
     }
 }
